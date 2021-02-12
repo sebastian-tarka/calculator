@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dark,
+.dark button {
+    color: white;
+    background-color: black;
+}
+
+.dark button.calc-action {
+    color: orange;
+    text-transform: uppercase;
+}
+
+.dark .calc-screen {
+    border-bottom-color: orange;
+}
+
+.light .calc-screen {
+    border-bottom-color: black;
+}
+
+.light,
+.light button {
+    color: black;
+    background-color: white;
+}
+
+.light button.calc-action {
+    color: orange;
+}
+
+.calc-keyboard button {
+    margin: 5px;
+    background-color: transparent;
+    border: 0px solid transparent;
+    border-radius: 25px;
+    min-width: 40px;
+    min-height: 40px;
+    font-size: .5em;
+}
+
+.calc-keyboard button:hover {
+    background-color: rgba(255, 166, 0, 0.541);
+    transition: .5s;
+}
+
+.light,
+.dark {
+    transition: 1s;
+}
+
+.App {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    background: grey;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc-app {
+    display: flex;
+    height: 70vh;
+    max-height: 560px;
+    width: 50vw;
+    max-width: 400px;
+    flex-direction: row;
+}
+
+.calc-screen {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding: 15px;
+    flex-direction: column;
+    font-size: 2em;
+    overflow-wrap: anywhere;
+    overflow: hidden;
+    border-bottom: 1px dotted;
+}
+
+.calc-options {
+    background-color: orange;
+    z-index: -1;
+    width: 0px;
+    transition: .5s;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0px;
+}
+
+.calc-options i {
+    cursor: pointer;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.show {
+    width: 30%;
+    transition: .5s;
+    z-index: 1;
+    font-size: 20px;
+}
+
+.calc-content {
+    width: inherit;
+}
+
+.calc-settings {
+    text-align: center;
+    width: 100%;
+    padding: 15px 15px 0 15px;
+}
+
+.summary {
+    color: rgb(112, 112, 112);
+    font-size: .5em;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
