@@ -1,0 +1,8 @@
+.calc-keyboard {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    font-size: 3em;
+    justify-items: center;
+    align-items: center;
+  }
+ 
