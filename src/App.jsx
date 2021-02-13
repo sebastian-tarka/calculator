@@ -8,7 +8,6 @@ function App() {
 
   return (
     <AppContexProvider>
-      <h1>{process.env.REACT_APP_TITLE } {process.env.NODE_ENV}</h1>
       <div className="App">
         <Calculator />
       </div>
