@@ -7,7 +7,7 @@ const AppContexProvider = ({ children }) => {
 
     const [score, setScore] = useState('0');
     const [summary, setSummary] = useState('');
-    const [theme, setTheme] = useState(process.env.REACT_APP_TITLE);
+    const [theme, setTheme] = useState('light');
 
     return (<AppContex.Provider value={
         {
